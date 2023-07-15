@@ -54,7 +54,7 @@ namespace ProgramacionObjeto
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+ 
         }
 
         private void Form_Triangulo_Load(object sender, EventArgs e)
