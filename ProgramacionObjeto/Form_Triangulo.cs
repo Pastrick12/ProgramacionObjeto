@@ -37,7 +37,15 @@ namespace ProgramacionObjeto
                 int lado1 = Convert.ToInt32(textBox1.Text);
                 int lado2 = Convert.ToInt32(textBox2.Text);
                 int lado3 = Convert.ToInt32(textBox3.Text);
-                MessageBox.Show((lado1 + lado2 + lado3).ToString(), "Este es el titulo de la ventana");
+                // MessageBox.Show((lado1 + lado2 + lado3).ToString(), "Este es el titulo de la ventana");
+                if (lado1 > 0 && lado2 > 0 && lado3 > 0)
+                {
+                    MessageBox.Show("Ahí vamos");
+                }
+                else
+                {
+                    MessageBox.Show("Con esas medidas no es posible formar un triangulo");
+                }
             } catch(Exception Error) { MessageBox.Show("Error","Errorcito", MessageBoxButtons.OK , MessageBoxIcon.Warning);
             }
             
@@ -55,6 +63,11 @@ namespace ProgramacionObjeto
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
